@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+
+
+    <header id="home">
+        <div class="header-content">
+            <div class="text-section">
+                <h1>Hello, I'm <span class="highlight">Web Dev</span></h1>
+                <p>
+                    I am an AIML student and web developer with expertise in designing intelligent, AI-powered solutions for web applications.
+                </p>
+                <a href="resume/resume.pdf" class="resume-btn" download>Download My Resume</a>
+                <div class="ssocial-icons">
+                    <a href="https://www.instagram.com/_jayanth_nayak__" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jayanth-banothu-678846202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://t.me/@mr_nayak24" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/+918688501879" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="images/profile.jpg" alt="My Profile Picture">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <section class="container" id="about">
+            <h2 class="section-title">About me</h2>
+            <div class="content">
+            <p>My name is BANOTHU JAYANTH, iam a AIML student at JB Institute of engineering and technology, Hyderabad.
+                I am a skilled in prompting and web developer with a passion for creating web applications.</p>
+        </div>
+    </section>
+
+    <section class="container" id="skills">
+        <div class="popup-content">
+            <h2 class="section-title">My Skills</h2>
+            <p>Web development, HTML, CSS, JavaScript, Python, React.</p>
+        </div>
+    </section>
+
+
+    <section id="projects">
+    <div class="container">
+        <h2 class="section-title">Works</h2>
+        <div class="projects-gallery">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-flip">
+                    <!-- Front Side (Image) -->
+                    <div class="project-front">
+                        <img src="images/project1.jpg" alt="Project 1">
+                    </div>
+                    <!-- Back Side (Details) -->
+                    <div class="project-back">
+                        <h3>Project 1</h3>
+                        <p>"Searchify" this is a Word searching application that will gives the wikipedia,Image,Youtube Video.</p>
+                        <a href="docs/project1.pdf" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat for other projects -->
+            <div class="project-card">
+                <div class="project-flip">
+                    <div class="project-front">
+                        <img src="images/project3.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-back">
+                        <h3>Project 2</h3>
+                        <p>Live emotion detection.</p>
+                        <a href="docs/project3.pdf" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-flip">
+                    <div class="project-front">
+                        <img src="images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-back">
+                        <h3>Project 2</h3>
+                        <p>Smart Face Attendance System.</p>
+                        <a href="docs/project2.pdf" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="container" id="My achivements">
+            <h2 class="section-title">My Achivements</h2>
+            <div class="content">
+            <p>You can see all my certificates here.</p>
+                <div class="certificates" id="initialCertificates">
+                <img src="certificates/cert1.jpg" alt="Certificate 1" class="certificate-thumb" onclick="openModal(this.src)">
+                <img src="certificates/cert2.jpg" alt="Certificate 2" class="certificate-thumb" onclick="openModal(this.src)">
+                    <img src="certificates/cert3.jpg" alt="Certificate 3" class="certificate-thumb" onclick="openModal(this.src)">
+                    <img src="certificates/cert4.jpg" alt="Certificate 4" class="certificate-thumb" onclick="openModal(this.src)">
+            </div>
+        <div id="moreCertificates" style="display: none;">
+            <img src="certificates/certificate3.jpg" alt="Certificate 3" class="certificate-thumb" onclick="openModal(this.src)">
+            <img src="certificates/certificate4.jpg" alt="Certificate 4" class="certificate-thumb" onclick="openModal(this.src)">
+            <!-- Add more certificates as needed -->
+        </div>
+    </div>
+
+    <!-- View More Button -->
+    <button id="viewMoreBtn" onclick="showMoreCertificates()">View More</button>
+</div>
+
+<!-- Modal for full-screen certificate view -->
+<div id="certificateModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+</section>
+
+        </div>
+    </section>
+
+
+        </div>
+    </section>
+    <section class="container" id="resume">
+        <div class="popup-content">
+            <h2 class="section-title">Resume</h2>
+            <p>You can download my resume <a href="resume/resume.jpg" download>here</a>.</p>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <div class="popup-content">
+            <h2 class="section-title">Contact Me</h2>
+            <p>Email: banothjayanth2003@gmail.com</p>
+            <p>Contact: +91 8688501879</p>
+        </div>
+    </section>
+<footer class="footer">
+    <div class="contact-text">
+        <h2>Let's Talk</h2>
+    </div>
+
+    <div class="social-icons">
+        <div class="icon">
+            <a href="https://t.me/yourusername" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <p>Telegram</p>
+        </div>
+        <div class="icon">
+            <a href="https://instagram.com/_jayanth_nayak__" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <p>Instagram</p>
+        </div>
+        <div class="icon">
+            <a href="https://wa.me/+918688501879" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <p>WhatsApp</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+    // Add click event to each project card
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('click', function() {
+            card.classList.toggle('flip'); // Toggle the 'flip' class on click
+        });
+    });
+</script>
